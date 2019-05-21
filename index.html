@@ -4,7 +4,8 @@
     <head>
       <meta charset="utf-8" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	  <link rel="stylesheet" href="css/index.css" />
+      <link rel="stylesheet" href="css/index.css" />
+      <script src="script.js" async></script>
 	</head>
 
     <body class="bg">
@@ -21,9 +22,9 @@
         <div class="homebubble">
             <h2>bubl</h2>
             <form>
-                Username<br>
+                <span class="us">Username</span><br>
                 <input id="username" type="text" name="username"><br>
-                Password<br>
+                <span class="pass">Password</span><br>
                 <input id="password" type="text" name="password">
             </form>
             <button class="login">Log In</button>
@@ -31,6 +32,28 @@
         <button class="createaccount">Create an Account</button>
     </body>
 
+    <div class="infodisclaimer">
+        <p>
+            Bubl is a social platform designed for students as they make their transition from elementary school
+            into middle school. This tool is school specific and helps students connect with other new students
+            based on their main interests.
+        </p>
+    </div>
+
+    <div class='lightbox'>
+        <div class='lightbox-inner'>
+            <div class='content'>
+                <p>
+                    Due to the nature of this website. Please enter your school code to continue:
+                </p>
+                <form>
+                    <input id="schoolcode" type="text" name="code"><br>
+                </form>
+                <button class="enter">Enter</button>
+            </div>
+        </div>
+    </div>
 </html>
         
+<script> </script>
     

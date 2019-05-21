@@ -56,7 +56,7 @@ q:before, q:after {
     border-radius: 50%;
     flex-direction: column;
     box-shadow: 1px 1px 2px #1CCAD8;
-    transition: 1s;
+    transition: 1s ease;
 
     h2 {
         color: #2589BD;
@@ -66,14 +66,14 @@ q:before, q:after {
         letter-spacing: 0.1em;
         margin-top: 80px;
     }
+
+    &:hover {
+        width: 435px;
+        height: 435px;
+        margin: 70px auto;
+    }
 }
 
-.homebubble:hover {
-    width: 435px;
-    height: 435px;
-    margin: 70px auto;
-    transition: 1s;
-}
 
 #username {
     border-radius: 25px;
@@ -96,6 +96,14 @@ form {
     font-size: 1em;
     letter-spacing: 0.1em;
     text-align: center;
+}
+
+.us {
+    font-family: Nunito, Arial, sans-serif;
+}
+
+.pass {
+    font-family: Nunito, Arial, sans-serif;
 }
 
 .login {
@@ -141,4 +149,95 @@ form {
     background-color: #d4edf7;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.infodisclaimer {
+    background-color: #d4edf7;
+    margin-top: 100px;
+    height: 120px;
+    display: flex;
+
+    p {
+        display: block;
+        width: 800px;
+        color: #2589BD;
+        font-family: Nunito, Arial, sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        margin: 12px auto;
+        line-height: 30px;
+    }
+}
+
+.lightbox {
+    overflow: auto;
+    position: fixed;
+    top: 0;   left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 999; 
+  }
+   
+  .lightbox > .lightbox-inner { 
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+  } 
+   
+  .lightbox-inner > .content {
+    display: flex;
+    outline: none;
+    text-align: left;
+    max-width: 90%;
+    background-color: #f7faff;
+    width: 500px;
+    height: 200px;
+    border-radius: 25px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+
+    p {
+        color: #2589BD;
+        font-family: Nunito, Arial, sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        width: 450px;
+        margin: 20px auto;
+    }
+
+    #schoolcode {
+        border-radius: 25px;
+        padding: 8px 12px;
+        margin-bottom: 15px;
+        border: solid #2589BD 2px;
+    }
+
+    .enter {
+        color: #0CF574;
+        font-family: Nunito, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background-color: #2589BD;
+        border-radius: 25px;
+        border: none;
+        text-align: center;
+        width: 150px;
+        padding: 10px 0;
+
+        &:hover {
+            background-color: #0CF574;
+            color: #2589BD;
+            transition: 1s;
+            cursor: pointer;
+        }
+    }
 }
