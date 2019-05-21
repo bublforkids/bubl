@@ -1,0 +1,41 @@
+.iconbar {
+    width: 1050px;
+    margin: 30px auto;
+    background-color: #f7faff;
+    height: 70px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50px;
+        border: solid 2px #2589BD;
+        border-radius: 50%;
+        height: 50px;
+        margin: 15px;
+    }
+
+    img:hover {
+        border: solid 2px red;
+        transition: 1s;
+        cursor: pointer;
+    }
+
+    .active-icon {
+        border: solid 2px red;
+    }
+}
+
+.filteredkids {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    width: 700px;
+    flex-wrap: wrap;
+
+    .kidbubble {
+        margin: 20px;
+        display: none;
+    }
+}
