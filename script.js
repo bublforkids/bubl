@@ -55,3 +55,13 @@ class IconBubble {
 const icons = document.querySelectorAll('.icon').forEach(icon => {
     return new IconLink(icon);
 });
+
+
+/// home page javascript below
+
+enterbutton = document.querySelector('.enter');
+popup = document.querySelector('.lightbox');
+
+enterbutton.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
