@@ -352,6 +352,12 @@ form {
   letter-spacing: 0.1em;
   text-align: center;
 }
+.us {
+  font-family: Nunito, Arial, sans-serif;
+}
+.pass {
+  font-family: Nunito, Arial, sans-serif;
+}
 .login {
   color: #0CF574;
   font-family: Nunito, Arial, sans-serif;
@@ -626,8 +632,31 @@ q:after {
   border-radius: 50%;
   box-shadow: 1px 1px 2px #1CCAD8;
   background-color: rgba(36, 123, 160, 0.7);
-  overflow: hidden;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.row1 .kidbubble {
+  margin: 55px 10px 0 10px;
+}
+.row2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.row2 .kidbubble {
+  margin: 0 10px;
+}
+.row3 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.row3 .kidbubble {
+  margin: 0 10px 0 10px;
 }
 .kidbubble {
   display: flex;
@@ -635,11 +664,11 @@ q:after {
   width: 170px;
   height: 170px;
   background-color: #f7faff;
-  margin: 80px auto;
   border-radius: 50%;
   flex-direction: column;
   box-shadow: 1px 1px 2px #1CCAD8;
   justify-content: center;
+  border: solid #2589BD 3px;
 }
 .kidbubble .avatar {
   width: 90px;
@@ -653,4 +682,31 @@ q:after {
   font-size: 1em;
   letter-spacing: 0.1em;
   margin-top: 10px;
+}
+.kidbubble:hover {
+  border: solid red 3px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.iconbar {
+  width: 1050px;
+  margin: 30px auto;
+  background-color: #f7faff;
+  height: 70px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconbar img {
+  width: 50px;
+  border: solid 2px #2589BD;
+  border-radius: 50%;
+  height: 50px;
+  margin: 15px;
+}
+.iconbar img:hover {
+  border: solid 2px red;
+  transition: 1s;
+  cursor: pointer;
 }

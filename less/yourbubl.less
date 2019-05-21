@@ -6,8 +6,37 @@
     border-radius: 50%;
     box-shadow: 1px 1px 2px #1CCAD8;
     background-color: rgba(36,123,160, 0.7);
-    overflow: hidden;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.row1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .kidbubble {
+        margin: 55px 10px 0 10px;
+    }
+}
+
+.row2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .kidbubble {
+        margin: 0 10px;
+    }
+}
+
+.row3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    .kidbubble {
+        margin: 0 10px 0 10px;
+    }
 }
 
 
@@ -17,11 +46,11 @@
     width: 170px;
     height: 170px;
     background-color: #f7faff;
-    margin: 80px auto;
     border-radius: 50%;
     flex-direction: column;
     box-shadow: 1px 1px 2px #1CCAD8;
     justify-content: center;
+    border: solid #2589BD 3px;
 
     .avatar {
         width: 90px;
@@ -37,4 +66,10 @@
         letter-spacing: 0.1em;
         margin-top: 10px;
     }
+}
+
+.kidbubble:hover {
+    border: solid red 3px;
+    transition: 0.5s;
+    cursor: pointer;
 }
