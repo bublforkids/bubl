@@ -307,6 +307,7 @@ q:after {
   content: none;
 }
 .homebubble {
+  transition: 1s;
   display: flex;
   align-items: center;
   width: 430px;
@@ -316,7 +317,7 @@ q:after {
   border-radius: 50%;
   flex-direction: column;
   box-shadow: 1px 1px 2px #1CCAD8;
-  transition: 1s;
+  transition: 1s ease;
 }
 .homebubble h2 {
   color: #2589BD;
@@ -330,7 +331,6 @@ q:after {
   width: 435px;
   height: 435px;
   margin: 70px auto;
-  transition: 1s;
 }
 #username {
   border-radius: 25px;
@@ -709,4 +709,15 @@ q:after {
   border: solid 2px red;
   transition: 1s;
   cursor: pointer;
+}
+.filteredkids {
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+  width: 700px;
+  flex-wrap: wrap;
+}
+.filteredkids .kidbubble {
+  margin: 20px;
+  display: none;
 }
