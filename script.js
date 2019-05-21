@@ -17,11 +17,14 @@ class IconLink {
 
     selectIcon() {
 
-        const icons = document.querySelectorAll('icon');
+        const icons = document.querySelectorAll('.icon');
+        const activeicons = document.querySelectorAll('.active-icon');
 
-        icons.forEach(icon => {
-            icon.classList.remove('active-icon');
-        })
+        if (activeicons.length === 3) {
+            icons.forEach(icon => {
+                icon.classList.remove('active-icon');
+            })
+        }
 
         const bubbles = document.querySelectorAll('.kidbubble');
 

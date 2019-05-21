@@ -398,6 +398,22 @@ form {
   transition: 0.5s;
   cursor: pointer;
 }
+.infodisclaimer {
+  background-color: #d4edf7;
+  margin-top: 100px;
+  height: 120px;
+  display: flex;
+}
+.infodisclaimer p {
+  display: block;
+  width: 800px;
+  color: #2589BD;
+  font-family: Nunito, Arial, sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 12px auto;
+  line-height: 30px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -709,6 +725,9 @@ q:after {
   border: solid 2px red;
   transition: 1s;
   cursor: pointer;
+}
+.iconbar .active-icon {
+  border: solid 2px red;
 }
 .filteredkids {
   display: flex;
