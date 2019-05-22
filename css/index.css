@@ -771,6 +771,23 @@ q:after {
   transition: 0.5s;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .mainbigbubble {
+    width: 450px;
+    height: 450px;
+  }
+  .kidbubble {
+    width: 120px;
+    height: 120px;
+  }
+  .kidbubble .avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .kidbubble h2 {
+    font-size: 0.688em;
+  }
+}
 .iconbar {
   width: 1050px;
   margin: 30px auto;
