@@ -491,6 +491,11 @@ form {
   width: 450px;
   margin: 20px auto;
 }
+@media (max-width: 500px) {
+  .lightbox-inner > .content p {
+    font-size: 1.1em;
+  }
+}
 .lightbox-inner > .content #schoolcode {
   border-radius: 25px;
   padding: 8px 12px;
@@ -743,6 +748,22 @@ q:after {
   transition: 1s;
   cursor: pointer;
 }
+.chat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+}
+@media (max-width: 500px) {
+  .chat {
+    margin-top: -30px;
+  }
+}
+.chat:hover {
+  opacity: 0.5;
+  transition: 1s;
+  cursor: pointer;
+}
 .mainbigbubble {
   display: flex;
   width: 630px;
@@ -752,6 +773,7 @@ q:after {
   box-shadow: 1px 1px 2px #1CCAD8;
   background-color: rgba(36, 123, 160, 0.7);
   flex-direction: column;
+  text-decoration: none;
 }
 .row1 {
   display: flex;
@@ -760,6 +782,7 @@ q:after {
 }
 .row1 .kidbubble {
   margin: 55px 10px 0 10px;
+  text-decoration: none;
 }
 .row2 {
   display: flex;
@@ -788,6 +811,7 @@ q:after {
   box-shadow: 1px 1px 2px #1CCAD8;
   justify-content: center;
   border: solid #2589BD 3px;
+  text-decoration: none;
 }
 .kidbubble .avatar {
   width: 90px;
@@ -801,13 +825,28 @@ q:after {
   font-size: 1em;
   letter-spacing: 0.1em;
   margin-top: 10px;
+  text-decoration: none;
+}
+.bublheader {
+  color: #0CF574;
+  font-family: Nunito, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: #2589BD;
+  padding: 5px 10px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 100px auto;
+  width: 60%;
 }
 .kidbubble:hover {
   border: solid red 3px;
   transition: 0.5s;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .mainbigbubble {
     width: 450px;
     height: 450px;
@@ -834,6 +873,13 @@ q:after {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  .iconbar {
+    width: 450px;
+    height: 250px;
+    flex-wrap: wrap;
+  }
+}
 .iconbar img {
   width: 50px;
   border: solid 2px #2589BD;
@@ -855,10 +901,17 @@ q:after {
   justify-content: center;
   width: 700px;
   flex-wrap: wrap;
+  transition: 1s;
+}
+@media (max-width: 500px) {
+  .filteredkids {
+    width: 400px;
+  }
 }
 .filteredkids .kidbubble {
   margin: 20px;
   display: none;
+  text-decoration: none;
 }
 .title {
   margin-top: 100px;
@@ -906,6 +959,13 @@ q:after {
 }
 @media (max-width: 500px) {
   .bg .form-control {
-    width: 400px;
+    width: 300px;
+    transition: 1s;
+  }
+}
+@media (max-width: 800px) {
+  .bg .form-control {
+    width: 500px;
+    transition: 1s;
   }
 }
