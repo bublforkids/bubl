@@ -7,6 +7,7 @@
     box-shadow: 1px 1px 2px #1CCAD8;
     background-color: rgba(36,123,160, 0.7);
     flex-direction: column;
+    text-decoration: none;
 }
 
 .row1 {
@@ -16,6 +17,7 @@
 
     .kidbubble {
         margin: 55px 10px 0 10px;
+        text-decoration: none;
     }
 }
 
@@ -51,6 +53,7 @@
     box-shadow: 1px 1px 2px #1CCAD8;
     justify-content: center;
     border: solid #2589BD 3px;
+    text-decoration: none;
 
     .avatar {
         width: 90px;
@@ -65,7 +68,23 @@
         font-size: 1em;
         letter-spacing: 0.1em;
         margin-top: 10px;
+        text-decoration: none;
     }
+}
+
+.bublheader {
+    color: #0CF574;
+    font-family: Nunito, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: #2589BD;
+    padding: 5px 10px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 100px auto;
+    width: 60%;
 }
 
 .kidbubble:hover {
@@ -74,18 +93,18 @@
     cursor: pointer;
 }
 
-@media(max-width: 500px){
-    .mainbigbubble{
+@media @tablet {
+    .mainbigbubble {
         // border: 1px solid red;
         width: 450px;
         height: 450px;
     }
 
-    .kidbubble{
+    .kidbubble {
         width: 120px;
         height: 120px;
 
-        .avatar{
+        .avatar {
             width: 60px;
             height: 60px;
         }
@@ -94,6 +113,4 @@
             font-size: 0.688em;
         }
     }
-
-    
 }

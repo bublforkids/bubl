@@ -53,8 +53,16 @@
    }
 }
 
-@media(max-width: 500px){
+@media @phone {
      .bg .form-control{
-          width: 400px;
+          width: 300px;
+          transition: 1s;
+     }
+}
+
+@media @tablet {
+     .bg .form-control{
+          width: 500px;
+          transition: 1s;
      }
 }

@@ -8,6 +8,12 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 1000px) {
+        width: 450px;
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
     img {
         width: 50px;
         border: solid 2px #2589BD;
@@ -33,9 +39,15 @@
     justify-content: center;
     width: 700px;
     flex-wrap: wrap;
+    transition: 1s;
+
+    @media @phone {
+        width: 400px;
+    }
 
     .kidbubble {
         margin: 20px;
         display: none;
+        text-decoration: none;
     }
 }
