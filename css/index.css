@@ -947,6 +947,12 @@ q:after {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 500px) {
+  .iconbar {
+    width: 300px;
+    height: 350px;
+  }
+}
 .iconbar img {
   width: 50px;
   border: solid 2px #2589BD;
@@ -1025,8 +1031,8 @@ q:after {
   border: 1px solid red;
 }
 @media (max-width: 500px) {
-  .bg .form-control {
-    width: 300px;
+  .contactbox {
+    width: 200px;
     transition: 1s;
   }
 }
