@@ -821,7 +821,7 @@ q:after {
   margin: 80px auto;
   border-radius: 50%;
   box-shadow: 1px 1px 2px #1CCAD8;
-  background-color: rgba(36, 123, 160, 0.7);
+  background-color: rgba(36, 123, 160, 0.4);
   flex-direction: column;
   text-decoration: none;
 }
@@ -911,6 +911,23 @@ q:after {
   }
   .kidbubble h2 {
     font-size: 0.688em;
+  }
+}
+@media (max-width: 500px) {
+  .mainbigbubble {
+    width: 350px;
+    height: 350px;
+  }
+  .kidbubble {
+    width: 85px;
+    height: 85px;
+  }
+  .kidbubble .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .kidbubble h2 {
+    font-size: 0.4em;
   }
 }
 .iconbar {
