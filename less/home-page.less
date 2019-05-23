@@ -64,6 +64,8 @@ q:before, q:after {
 
     @media @phone {
         box-shadow: 20px 20px 20px #1CCAD8;
+        width: 90%;
+        height: 90%;
     }
 
     h2 {
@@ -73,12 +75,23 @@ q:before, q:after {
         font-size: 6em;
         letter-spacing: 0.1em;
         margin-top: 80px;
+
+        @media @phone {
+            margin-top: 50px;
+        }
     }
 
     &:hover {
         width: 435px;
         height: 435px;
         margin: 70px auto;
+
+        @media @phone {
+            width: 90%;
+            height: 90%;
+            margin: 70px auto;
+
+        }
     }
 }
 
@@ -127,6 +140,12 @@ form {
   border: none;
   margin-top: 15px;
   transition: 0.5s;
+
+  @media @phone {
+      font-size: 0.7em;
+      margin-top: 5px;
+      margin-bottom: 10px;
+  }
 }
 
 .login:hover {
@@ -232,6 +251,7 @@ form {
         margin: 20px auto;
 
         @media @phone {
+            width: 300px;
             font-size: 1.1em;
         }
     }
