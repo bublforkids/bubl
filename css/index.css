@@ -710,6 +710,12 @@ q:after {
   flex-direction: column;
   box-shadow: 1px 1px 2px #1CCAD8;
 }
+@media (max-width: 500px) {
+  .backgroundblock {
+    width: 350px;
+    height: 350px;
+  }
+}
 .avatar {
   width: 150px;
   height: 150px;
@@ -719,6 +725,12 @@ q:after {
   justify-content: center;
   align-items: center;
   margin: 40px 0 30px;
+}
+@media (max-width: 500px) {
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
 }
 .avatar img {
   width: 95%;
@@ -735,6 +747,11 @@ q:after {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .backgroundblock h2 {
+    font-size: 2.5em;
+  }
+}
 .backgroundblock h3 {
   color: #0CF574;
   font-family: Nunito, Arial, sans-serif;
@@ -745,6 +762,11 @@ q:after {
   background-color: #2589BD;
   padding: 5px 10px;
   border-radius: 25px;
+}
+@media (max-width: 500px) {
+  .backgroundblock h3 {
+    font-size: 0.8em;
+  }
 }
 .backgroundblock h3:hover {
   background-color: #18d2f7;
@@ -757,6 +779,11 @@ q:after {
   justify-content: center;
   width: 275px;
   height: 100px;
+}
+@media (max-width: 500px) {
+  .interestsblock {
+    width: 225px;
+  }
 }
 .interestsblock img {
   width: 50px;
@@ -778,7 +805,8 @@ q:after {
 }
 @media (max-width: 500px) {
   .chat {
-    margin-top: -30px;
+    width: 90px;
+    margin-top: -40px;
   }
 }
 .chat:hover {
